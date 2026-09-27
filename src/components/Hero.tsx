@@ -59,7 +59,11 @@ export function Hero({ mode, resume }: { mode: Mode; resume: Resume }) {
         {resume.summary}
       </motion.p>
 
-      <dl className="mt-14 grid max-w-3xl grid-cols-1 gap-6 sm:grid-cols-3">
+      <dl
+        className={`mt-14 grid grid-cols-1 gap-6 sm:grid-cols-2 ${
+          resume.stats.length > 3 ? 'max-w-5xl lg:grid-cols-4' : 'max-w-3xl sm:grid-cols-3'
+        }`}
+      >
         {resume.stats.map((s, i) => (
           <motion.div
             key={s.label}
@@ -69,9 +73,15 @@ export function Hero({ mode, resume }: { mode: Mode; resume: Resume }) {
             className="glass rounded-2xl p-5"
           >
             <dd className="font-display text-3xl font-semibold tracking-tight sm:text-4xl">
-              {s.prefix}
-              <CountUp to={s.value} duration={1.6} />
-              <span className="text-[var(--accent)]">{s.suffix}</span>
+              {s.text ? (
+                <span className="text-[var(--accent)]">{s.text}</span>
+              ) : (
+                <>
+                  {s.prefix}
+                  <CountUp to={s.value ?? 0} duration={1.6} />
+                  <span className="text-[var(--accent)]">{s.suffix}</span>
+                </>
+              )}
             </dd>
             <dt className="mt-2 text-sm leading-snug text-[var(--muted)]">{s.label}</dt>
           </motion.div>

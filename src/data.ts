@@ -11,7 +11,8 @@ export type Role = {
   tags?: string[]
 }
 
-export type Stat = { value: number; prefix?: string; suffix: string; label: string }
+/** A counted number, or a `text` highlight shown in place of the number. */
+export type Stat = { value?: number; text?: string; prefix?: string; suffix?: string; label: string }
 
 export type Resume = {
   label: string
@@ -41,7 +42,8 @@ export const RESUMES: Record<Mode, Resume> = {
       'AI student at Vrije Universiteit Amsterdam building AI products end to end, from diffusion-model research to agents that publish to real websites.',
     stats: [
       { value: 4, suffix: '', label: 'CMS platforms integrated for auto-publishing' },
-      { value: 2, suffix: 'M+', label: 'combined followers across agency clients' },
+      { value: 6, suffix: '+', label: 'years building software' },
+      { text: 'Freelance', label: 'AI Director' },
       { value: 3, suffix: '', label: 'products founded and shipped' },
     ],
     marquee: ['PyTorch', 'CUDA', 'Diffusion Models', 'LoRA', 'CLIP', 'DINOv2', 'Next.js', 'Supabase', 'Cloudflare', 'Python', 'C/C++', 'Java'],
