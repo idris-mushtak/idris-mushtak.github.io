@@ -40,7 +40,7 @@ export const RESUMES: Record<Mode, Resume> = {
     summary:
       'AI student at Vrije Universiteit Amsterdam building AI products end to end, from diffusion-model research to agents that publish to real websites.',
     stats: [
-      { value: 100, suffix: 'K+', label: 'followers grown from zero in 8 months' },
+      { value: 4, suffix: '', label: 'CMS platforms integrated for auto-publishing' },
       { value: 2, suffix: 'M+', label: 'combined followers across agency clients' },
       { value: 3, suffix: '', label: 'products founded and shipped' },
     ],
@@ -124,7 +124,7 @@ export const RESUMES: Record<Mode, Resume> = {
     summary:
       'I’m an AI student and founder building useful things at the intersection of marketing, content and technology. I run a creative agency helping hospitality and lifestyle brands grow their social presence, alongside a content-protection service and an AI video-ad startup, and I’m still learning as I go.',
     stats: [
-      { value: 100, suffix: 'K+', label: 'followers per managed creator' },
+      { value: 96, suffix: 'K+', label: 'followers grown from zero in 8 months' },
       { value: 30, prefix: '+', suffix: '%', label: 'average monthly engagement growth for clients' },
       { value: 3, suffix: '', label: 'companies founded' },
     ],
