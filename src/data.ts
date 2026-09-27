@@ -169,14 +169,15 @@ export const RESUMES: Record<Mode, Resume> = {
       },
     ],
     feature: {
-      kicker: 'Technical projects',
+      kicker: 'Side & technical projects',
       title: 'Where marketing meets machine learning',
-      subtitle: 'TensorFlow · Keras · Bubble.io · AWS · Whisper · Dialogflow · Prolog · JADE',
+      subtitle: 'Instagram · TikTok · Growth hacking · TensorFlow · Bubble.io · Whisper · Dialogflow',
       bullets: [
+        'Social Media Manager (side project): ran social media for restaurants and influencers, growth-hacking their accounts to 100K+ followers through content strategy, trend timing and posting cadence.',
         'Sneaker Verification App: trained a TensorFlow/Keras deep learning classifier on augmented image data; shipped as a Bubble.io web app with AWS-backed image storage.',
         'Conversational & Multi-Agent Systems: built a voice-driven recipe assistant (Whisper, Dialogflow, Prolog filtering over 1,000 recipes) and a JADE-based multi-agent simulation using search algorithms for coordinated decision-making.',
       ],
-      tags: ['Deep learning', 'Voice AI', 'Multi-agent systems'],
+      tags: ['Social media management', 'Growth hacking', 'Restaurants', 'Influencers', 'Deep learning', 'Voice AI'],
     },
     education: {
       school: 'Vrije Universiteit Amsterdam',
