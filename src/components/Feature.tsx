@@ -14,7 +14,7 @@ export function Feature({ feature, mode }: { feature: Resume['feature']; mode: M
       >
         <div className="pointer-events-none absolute -right-24 -top-24 h-72 w-72 rounded-full bg-[var(--accent-2)] opacity-20 blur-3xl" />
         <p className="font-mono text-xs uppercase tracking-[0.2em] text-[var(--accent)]">{feature.kicker}</p>
-        <h3 className={`mt-4 max-w-3xl text-3xl leading-tight tracking-tight sm:text-5xl ${mode === 'engineering' ? 'font-display font-semibold' : 'font-serif italic'}`}>
+        <h3 className={`mt-4 max-w-3xl text-2xl leading-tight tracking-tight sm:text-4xl ${mode === 'engineering' ? 'font-display font-semibold' : 'font-serif italic'}`}>
           {feature.title}
         </h3>
         <p className="mt-4 font-mono text-xs text-[var(--muted)]">{feature.subtitle}</p>

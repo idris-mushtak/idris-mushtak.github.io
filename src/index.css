@@ -14,8 +14,8 @@
   --bg: #04050b;
   --ink: #eef2ff;
   --muted: #9aa3c7;
-  --accent: #7dd3fc;
-  --accent-2: #a78bfa;
+  --accent: #9ec5ff;
+  --accent-2: #c9dcff;
   --card: rgba(12, 16, 32, 0.55);
   --line: rgba(148, 163, 255, 0.14);
 }
@@ -23,8 +23,8 @@
   --bg: #0d0508;
   --ink: #fff4ef;
   --muted: #d6b3aa;
-  --accent: #ffb86b;
-  --accent-2: #ff4d8d;
+  --accent: #ffab7a;
+  --accent-2: #ffcdb0;
   --card: rgba(30, 10, 16, 0.5);
   --line: rgba(255, 170, 150, 0.16);
 }

@@ -40,7 +40,7 @@ export const RESUMES: Record<Mode, Resume> = {
     summary:
       'AI student at Vrije Universiteit Amsterdam building AI products end to end, from diffusion-model research to agents that publish to real websites.',
     stats: [
-      { value: 5, suffix: 'B', label: 'parameter video diffusion backbone in my thesis' },
+      { value: 100, suffix: 'K+', label: 'followers grown from zero in 8 months' },
       { value: 2, suffix: 'M+', label: 'combined followers across agency clients' },
       { value: 3, suffix: '', label: 'products founded and shipped' },
     ],

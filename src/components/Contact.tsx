@@ -16,7 +16,7 @@ export function Contact({ mode }: { mode: Mode }) {
         text={mode === 'engineering' ? "Let's build something." : "Let's grow something."}
         animateBy="words"
         delay={80}
-        className={`mt-4 text-5xl leading-none tracking-tight sm:text-8xl ${mode === 'engineering' ? 'font-display font-bold' : 'font-serif italic'}`}
+        className={`mt-4 text-4xl leading-none tracking-tight sm:text-6xl ${mode === 'engineering' ? 'font-display font-bold' : 'font-serif italic'}`}
       />
       <div className="mt-14 flex flex-wrap gap-4">
         {LINKS.map((l) => (

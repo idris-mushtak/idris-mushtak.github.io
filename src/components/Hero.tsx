@@ -20,21 +20,21 @@ export function Hero({ mode, resume }: { mode: Mode; resume: Resume }) {
 
       <h1 className="mt-6 leading-[0.92] tracking-[-0.04em]">
         {eng ? (
-          <span className="font-display text-[clamp(3.2rem,11vw,9.5rem)] font-bold">
+          <span className="font-display text-[clamp(2.6rem,8vw,6.5rem)] font-bold">
             <DecryptedText text="Idris" animateOn="view" sequential revealDirection="start" speed={45} className="text-[var(--ink)]" encryptedClassName="text-[var(--accent)]" />
             <br />
             <DecryptedText text="Mushtak" animateOn="view" sequential revealDirection="start" speed={45} className="text-[var(--ink)]" encryptedClassName="text-[var(--accent-2)]" />
           </span>
         ) : (
-          <span className="font-serif text-[clamp(3.6rem,12vw,10.5rem)] italic">
-            <GradientText colors={['#ffb86b', '#ff4d8d', '#9b5cff', '#ffb86b']} animationSpeed={6} className="!mx-0 !block">
+          <span className="font-serif text-[clamp(2.9rem,8.5vw,7.25rem)] italic">
+            <GradientText colors={['#ffe2d1', '#ffab7a', '#ff8a52', '#ffe2d1']} animationSpeed={6} className="!mx-0 !block">
               Idris Mushtak
             </GradientText>
           </span>
         )}
       </h1>
 
-      <div className="mt-8 flex flex-wrap items-center gap-3 font-display text-xl sm:text-3xl">
+      <div className="mt-8 flex flex-wrap items-center gap-3 font-display text-lg sm:text-2xl">
         <span className="text-[var(--muted)]">{eng ? 'I build as an' : 'I grow brands as a'}</span>
         <RotatingText
           texts={resume.roles}
@@ -68,7 +68,7 @@ export function Hero({ mode, resume }: { mode: Mode; resume: Resume }) {
             transition={{ delay: 0.7 + i * 0.12 }}
             className="glass rounded-2xl p-5"
           >
-            <dd className="font-display text-4xl font-semibold tracking-tight sm:text-5xl">
+            <dd className="font-display text-3xl font-semibold tracking-tight sm:text-4xl">
               {s.prefix}
               <CountUp to={s.value} duration={1.6} />
               <span className="text-[var(--accent)]">{s.suffix}</span>

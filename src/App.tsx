@@ -59,7 +59,7 @@ export default function App() {
   }
 
   return (
-    <ClickSpark sparkColor={mode === 'engineering' ? '#7dd3fc' : '#ffb86b'} sparkCount={10} sparkRadius={22}>
+    <ClickSpark sparkColor={mode === 'engineering' ? '#9ec5ff' : '#ffab7a'} sparkCount={10} sparkRadius={22}>
       <Backdrop mode={mode} />
 
       <header

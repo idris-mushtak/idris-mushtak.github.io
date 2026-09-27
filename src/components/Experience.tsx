@@ -4,7 +4,7 @@ import type { Mode, Role } from '../data'
 import { Section } from './Section'
 
 export function Experience({ roles, mode }: { roles: Role[]; mode: Mode }) {
-  const spot = mode === 'engineering' ? 'rgba(125, 211, 252, 0.18)' : 'rgba(255, 140, 120, 0.2)'
+  const spot = mode === 'engineering' ? 'rgba(158, 197, 255, 0.14)' : 'rgba(255, 171, 122, 0.15)'
   return (
     <Section id="experience" index="01" title="Experience">
       <ol className="relative space-y-6 before:absolute before:bottom-2 before:left-[7px] before:top-2 before:w-px before:bg-gradient-to-b before:from-[var(--accent)] before:via-[var(--line)] before:to-transparent sm:before:left-[9px]">

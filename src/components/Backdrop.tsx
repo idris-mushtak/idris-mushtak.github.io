@@ -25,7 +25,7 @@ class BackgroundBoundary extends Component<{ fallback: ReactNode; children: Reac
 }
 
 function CssFallback({ mode }: { mode: Mode }) {
-  const colors = mode === 'engineering' ? ['#1e3a8a', '#4c1d95', '#0c4a6e'] : ['#9d174d', '#c2410c', '#6d28d9']
+  const colors = mode === 'engineering' ? ['#1e3a8a', '#1e40af', '#172554'] : ['#7c2d12', '#9a3412', '#431407']
   return (
     <div className="absolute inset-0 overflow-hidden">
       {colors.map((c, i) => (
@@ -65,8 +65,8 @@ export function Backdrop({ mode }: { mode: Mode }) {
                 <div className="pointer-events-auto absolute inset-0">
                   <Galaxy
                     density={1.2}
-                    hueShift={210}
-                    saturation={0.35}
+                    hueShift={215}
+                    saturation={0.08}
                     glowIntensity={0.35}
                     twinkleIntensity={0.4}
                     rotationSpeed={0.04}
@@ -77,7 +77,7 @@ export function Backdrop({ mode }: { mode: Mode }) {
                   />
                 </div>
               ) : (
-                <Aurora colorStops={['#ff4d8d', '#ffb86b', '#9b5cff']} amplitude={1.15} blend={0.55} speed={0.8} />
+                <Aurora colorStops={['#5a1f0e', '#c2542a', '#7a2c14']} amplitude={1.0} blend={0.5} speed={0.7} />
               )}
             </BackgroundBoundary>
           )}
