@@ -41,9 +41,7 @@ export const RESUMES: Record<Mode, Resume> = {
     summary:
       'AI student at Vrije Universiteit Amsterdam building AI products end to end, from diffusion-model research to agents that publish to real websites.',
     stats: [
-      { value: 4, suffix: '', label: 'CMS platforms integrated for auto-publishing' },
       { value: 6, suffix: '+', label: 'years building software' },
-      { text: 'Freelance', label: 'AI Director' },
       { value: 3, suffix: '', label: 'products founded and shipped' },
     ],
     marquee: ['PyTorch', 'CUDA', 'Diffusion Models', 'LoRA', 'CLIP', 'DINOv2', 'Next.js', 'Supabase', 'Cloudflare', 'Python', 'C/C++', 'Java'],
